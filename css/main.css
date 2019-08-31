@@ -27,8 +27,38 @@ p, a{
   padding: 10px 20px;
   text-align: center;
   vertical-align: middle;
+
   
 
+}
+.title span {
+  animation-name: blink;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  display: inline-block;
+  width: 40px;
+  font-size: 2.0vw;
+}
+
+.title span:nth-child(2) {
+  animation-delay: .3s;
+}
+
+.title span:nth-child(3) {
+  animation-delay: .5s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
 }
 .description{
   color: rgb(255,182,193);
@@ -97,11 +127,11 @@ left: 0;
 
 .computer{
   margin-top: -220px;
-  background: -webkit-linear-gradient(90deg, #ffffc7 90%, #9ca386 10%);
-  background: -o-linear-gradient(90deg, #ffffc7 90%, #9ca386 10%);
-  background: -moz-linear-gradient(90deg, #ffffc7 90%, #9ca386 10%);
-  background: linear-gradient(90deg, #ffffc7 90%, #9ca386 10%);
-  width: 490px;
+  background: -webkit-linear-gradient(90deg, #ffffc7 91%, #e5e5c9 9%);
+  background: -o-linear-gradient(90deg, #ffffc7 91%, #e5e5c9 9%);
+  background: -moz-linear-gradient(90deg, #ffffc7 91%, #e5e5c9 9%);
+  background: linear-gradient(90deg, #ffffc7 91%, #e5e5c9 9%);
+  width: 372px;
   height: 380px;
   margin-left: 51em;
   vertical-align:middle;
@@ -110,17 +140,36 @@ left: 0;
 
   
 }
+.shade{
+  height: 270px;
+  background-color: #e5e5c9;
+  position: absolute;
+  width: 24.5px;
+  top: 35px;
+  left: 20px;
+
+}
+.computer:after{
+  content: '';
+  position: absolute;
+  width: 24.5px;
+  height: 380px;
+  top: 0px;
+  left: 362px;
+  background-color: #A8937D;
+}
 .animation{
   margin-top: -20px;
-  width: 350px;
+  width: 270px;
   height: 270px;
   position: absolute;
   top: 50%;
-  left: 43%;
+  left: 48%;
   transform: translate(-50%, -50%);
 }
+
 .holder{
-  width: 130px;
+  width: 110px;
   height: 20px;
   background: #92977E;
   position: absolute;
@@ -133,15 +182,31 @@ left: 0;
   height: 20px;
   background: #9ca386;
   position: relative;
+  left: 80px;
   top: 380px;
-  left: 100px;
+}
+.rect1{
+  position: absolute;
+  width: 24.5px;
+  height: 320px;
+  top: 30px;
+  left: 386.5px;
+  background-color: #A8937D;
+}
+.rect2{
+  position: absolute;
+  width: 24.5px;
+  height: 240px;
+  top: 70px;
+  left: 411px;
+  background-color: #A8937D;
 }
 .computerButton{
   height: 15px;
   width: 15px;
   top: 340px;
   position: relative;
-  left: 330px;
+  left: 270px;
   background: rgb(50,205,50);
 }
 .button1, .button2, .button3, .button4{
@@ -153,16 +218,16 @@ left: 0;
   margin-left: -30px;
 }
 .button1{
-  left: 65px;
+  left: 70px;
 }
 .button2{
-  left: 115px;
+  left: 110px;
 }
 .button3{
-  left: 165px;
+  left: 150px;
 }
 .button4{
-  left: 215px;
+  left: 190px;
 }
 
 @media screen and (min-width: 1500px) {
@@ -176,22 +241,15 @@ left: 0;
 
 }
 
-@media screen and (max-width: 1000px) {
-  .title{
-    font-size: 10px;
-    width: 30px;
-  }
-  .description{
-    width: 70px;
-  }
-
-}
-@media screen and (max-width: 700px){
-.subscribe, .submissions, .lastyear{
+@media screen and (max-width: 1080px) {
+   .subscribe, .submissions, .lastyear{
   letter-spacing: 0px;
   padding: 10px 20px;
   margin-top: 30px;
+  margin-right: 5px;
+  margin-left: 50px;
   }
+
   .description{
     width: 50%;
     text-align: center;
@@ -202,11 +260,15 @@ left: 0;
     width: 50%;
     margin: auto;
   }
+  .title span{
+    display: inline;
+  }
   .computer{
     margin: auto;
-    width: 200px;
+    width: 220px;
     height: 180px;
     margin-top: 20px;
+    left: -20px;
   }
   .animation{
     width: 140px;
@@ -220,23 +282,23 @@ left: 0;
   background: #92977E;
 }
 .button1{
-  left: 45px;
-}
-.button2{
   left: 65px;
 }
-.button3{
+.button2{
   left: 85px;
 }
-.button4{
+.button3{
   left: 105px;
+}
+.button4{
+  left: 125px;
 }
 .computerButton{
   height: 7.5px;
   width: 7.5px;
   top: 150px;
   position: relative;
-  left: 130px;
+  left: 153px;
   background: rgb(50,205,50);
 }
 .holder{
@@ -245,18 +307,59 @@ left: 0;
   background: #92977E;
   position: absolute;
   top: 180px;
-  left: 80px;
+  left: 100px;
 
 }
 .holder2{
-  width: 134px;
+  width: 155px;
   height: 15px;
   background: #9ca386;
   position: relative;
   top: 187px;
-  left: 40px;
+  left: 46px;
+}
+.shade{
+  height: 120px;
+  left: 17px;
+  top: 10px;
+  width: 18px;
+
+  
+}
+.computer:after{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 180px;
+  top: 0px;
+  left: 220px;
+  background-color: #A8937D;
+}
+.rect1{
+  position: absolute;
+  width: 15px;
+  height: 160px;
+  top: 10px;
+  left: 235px;
+  background-color: #A8937D;
+}
+.rect2{
+  position: absolute;
+  width: 15px;
+  height: 120px;
+  top: 30px;
+  left: 250px;
+  background-color: #A8937D;
 }
 
+}
+@media screen and (max-width: 760px){
+
+  .subscribe, .submissions, .lastyear{
+  letter-spacing: 0px;
+  padding: 10px 20px;
+  margin-left: 0px;
+  }
 
 
 
