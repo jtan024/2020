@@ -2,6 +2,8 @@ body, html {
   height: 100%;
   margin: auto;
   font-family: 'Press Start 2P', cursive;
+  background-color: rgb(255,192,203);
+  overflow:hidden;
 }
 
 .image {
@@ -47,6 +49,16 @@ body, html {
 }
 .description{
   top: 140px;
+  
+}
+
+@media screen and (max-width: 657px) {
+  .subscribe, .submissions, .lastyear{
+  top: 400px;
+}
+.description{
+  top: 300px;
+  font-size: 1.6vw;
   
 }
 }
