@@ -5,22 +5,17 @@ body, html {
   font-family: 'Press Start 2P', cursive;
   background-color: rgb(255,192,203);
   overflow:hidden;
-  margin: 0px;
-  padding: 0px;
+  background: url("../images/animation(HQ).gif") center repeat-x;
+  position: fixed;
+  background-size: 100vw 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1
 }
 
-.image {
-  /* The image used */
-  background-image: url("../images/animation.gif");
 
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .subscribe, .submissions, .lastyear{
   padding: 9px 7px;
@@ -64,9 +59,20 @@ body, html {
   font-size: 1.6vw;
   
 }
+body,html{
+  background-size: cover;
+}
 }
 @media screen and (max-width: 320px) {
   .subscribe, .submissions, .lastyear{
+  top: 270px;
+}
+.description{
+  top: 210px;
+  font-size: 1.6vw;
+
+}
+}{
   top: 270px;
 }
 .description{
