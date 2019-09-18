@@ -15,18 +15,7 @@ body, html {
   z-index: -1
 }
 
-.image {
-  /* The image used */
-  background-image: url("../images/animation(HQ).gif");
 
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .subscribe, .submissions, .lastyear{
   padding: 9px 7px;
