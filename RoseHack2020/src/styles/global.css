@@ -1,0 +1,87 @@
+body{
+    background: #DF999F;
+    font-family: "Press Start 2P", cursive;
+    overflow:hidden;
+}
+.title{
+    text-align: center;
+
+}
+#about{
+    background: #DF999F;
+    margin-top: -100px;
+}
+
+section{
+    padding: 30px 20vw;
+
+}
+.sponsorTitle{
+    color: white;
+}
+#questions{
+    background: #E3A9B4;
+    width: 100%;
+
+}
+#sponsors{
+    background: #DA6D76;
+}
+
+.email-button {
+    font-family: "Open Sans", sans-serif;
+    background-color: #FFEFEB;
+    color: #402531;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.25s;
+    z-index: 10;
+    margin-bottom: 2em;
+    align-content: center;
+    position: relative;
+    top: -20em;
+
+}
+.centerButton{
+    display: flex;
+    justify-content: center;
+}
+.email-button:hover{
+    background-color: #402531;
+    color: #FFEFEB;
+}
+.tab{
+    background: #603348;
+    width:500px;
+    height:60px;
+    line-height:60px;
+    position:relative;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+}
+
+
+.questionContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.question{
+    background: #603348;
+}
+
+@media only screen and (max-width: 400px) {
+    .sponsorTitle{
+        font-size: 1.50rem;
+    }
+}
+h1{
+    font-family: "Press Start 2P", cursive;
+}
+
+.questionContainer{
+    position: relative;
+    margin: 0 auto;
+    overflow:hidden
+}
