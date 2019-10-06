@@ -33,12 +33,12 @@ const Layout = ({ children }) => {
     <>
       <div>
         <main>{children}</main>
-        <footer style={{textAlign : "center"}}>
+        <footer className={'footer'}>
           <div className={'social row-item'}>
-          <a href={'https://www.facebook.com/rosehackucr/'} target={'_blank'}><h2 style={{color: "white", marginTop:'3px'}}> <FaFacebookF /> </h2></a>
-          <a href={'https://twitter.com/rosehack_ucr'} target={'_blank'}><h2 style={{color: "white", marginTop:'3px'}}> <FaTwitter /> </h2></a>
-          <a href={'https://www.linkedin.com/company/rose-hack/'} target={'_blank'}><h2 style={{color: "white", marginTop:'3px'}}> <FaLinkedinIn /> </h2></a>
-          <a href={'https://www.instagram.com/rosehackucr/'} target={'_blank'}><h2 style={{color: "white", marginTop:'3px'}}> <FaInstagram /> </h2></a>
+          <li><a href={'https://www.facebook.com/rosehackucr/'} target={'_blank'}><h2 className={'icon'}> <FaFacebookF /> </h2></a></li>
+          <li><a href={'https://twitter.com/rosehack_ucr'} target={'_blank'}><h2 className={'icon'}> <FaTwitter /> </h2></a></li>
+           <li><a href={'https://www.linkedin.com/company/rose-hack/'} target={'_blank'}><h2 className={'icon'}> <FaLinkedinIn /> </h2></a></li>
+            <li><a href={'https://www.instagram.com/rosehackucr/'} target={'_blank'}><h2 className={'icon'}> <FaInstagram /> </h2></a></li>
           </div>
           Built with ❤️
           {` `}

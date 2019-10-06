@@ -1,16 +1,28 @@
-body{
+body, html{
     background: #DF999F;
     font-family: "Press Start 2P", cursive;
-    overflow:hidden;
+    overflow:visible;
+    height: 100%;
+
 
 }
 .title{
     text-align: center;
 
 }
+.overlay{
+    position: relative;
+    overflow: hidden;
+}
+.animation{
+    overflow: -moz-hidden-unscrollable;
+    width: 100%;
+    height: 100%;
+
+}
 #about{
     background: #DF999F;
-    margin-top: -100px;
+    margin-top: -50px;
 }
 
 section{
@@ -22,7 +34,6 @@ section{
 }
 #questions{
     background: #E3A9B4;
-    width: 100%;
 
 }
 #sponsors{
@@ -37,11 +48,12 @@ section{
     padding: 10px 20px;
     transition: 0.25s;
     z-index: 10;
-    margin-bottom: 2em;
     align-content: center;
     position: relative;
-    top: -18em;
     box-shadow: 5px 10px #603348;
+    width: 100%;
+    min-width: 50px;
+    max-width: 70px;
 
 }
 .apply-button:active {
@@ -49,28 +61,27 @@ section{
 }
 
 .centerButton{
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+}
+.centerButton:before{
+    content: ' ';
+    display: block;
+    height: 56%;
 
 }
 .email-button:hover{
     background-color: #402531;
     color: #FFEFEB;
 }
-.tab{
-    background: #603348;
-    width:340px;
-    height:60px;
-    position:relative;
-    color: white;
-    border: none;
-    margin-bottom: 20px;
-    line-height: 60px;
-    float: left;
-}
+
 .answer{
-    width:340px;
-    height:270px;
+    height:380px;
     position:relative;
     color: black;
     margin-bottom: 20px;
@@ -79,8 +90,11 @@ section{
     background: -moz-linear-gradient(0deg, #E3A9B4 10%, #603348 90%);
     background: linear-gradient(0deg, #E3A9B4 70%, #603348 50%);
     border: 8px solid #603348;
+    width: 100%;
+    min-width: 50px;
+    max-width: 300px;
+    font-size: 15px;
 }
-
 
 
 .question{
@@ -98,51 +112,105 @@ h1{
     justify-content: space-between;
 }
 .half{
-    width: 44%;
+    width: 38%;
 }
 .date{
-
     font-weight: 900;
     color: white;
     text-transform: uppercase;
     margin: 0;
     position: absolute;
-    top: 44%;
-    left: 50%;
-    font-size: 2rem;
+    top: 43%;
     transform: translate(-50%, -50%);
+    left: 50%;
+    font-size: 4vh;
 }
 .questionText{
-    margin-bottom: 20%;
+    margin-bottom: 35%;
     color: white;
+    font-size: 18px;
 }
 .answerText{
-    font-size: 15px;
+    font-size: 18px;
     color: black;
 }
+.social a {
+    padding-top: 5%;
+    margin-bottom: 0;
+    color: white;
+    font-size: 1.5em;
+}
 
-@media only screen and (max-width: 472px) {
+.social a {
+    text-decoration: none;
+}
+
+.social > .row {
+    margin: 25% 0;
+}
+@media only screen and (max-width: 1100px) {
+    .centerButton:before{
+        content: ' ';
+        display: block;
+        height: 55%;
+
+    }
+
+
+}
+@media only screen and (max-width: 1040px) {
+    .questionText{
+        margin-bottom: 45%;
+
+    }
+    .answerText{
+        font-size: 15px;
+    }
+
+
+}
+@media only screen and (max-width: 860px) {
+    .apply-button{
+        padding: 3px 6px;
+    }
+    .centerButton:before{
+        content: ' ';
+        display: block;
+        height: 50%;
+
+    }
+    .questionText{
+        margin-bottom: 15%;
+    }
+    .date{
+        font-weight: 900;
+        color: white;
+        text-transform: uppercase;
+        margin: 0;
+        position: absolute;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 840px) {
     .questionContainer{
-      display: block;
+        display: block;
+        text-align: center;
     }
     .sponsorTitle{
         font-size: 1.50rem;
     }
-    .tab{
-        background: #603348;
-        width:250px;
-        height:50px;
-        position:relative;
-        color: black;
-        float: left;
-        display: block;
-        font-size: 12px;
-        left: -25px;
 
-    }
     .answer{
-        width:250px;
-        height:150px;
+        width: 100%;
+        min-width: 50px;
+        max-width: 300px;
+        height:200px;
         position:relative;
         color: black;
         background: -webkit-linear-gradient(0deg,  #E3A9B4 10%, #603348 90%);
@@ -151,33 +219,56 @@ h1{
         background: linear-gradient(0deg, #E3A9B4 70%, #603348 50%);
         border: 8px solid #603348;
         font-size: 12px;
-        left: -25px;
+        text-align: center;
+        left: 0%;
+
+
+
 
     }
     .half{
-        width: 0%;
+        width: 100%;
     }
     .questionText{
-        margin-bottom: 6%;
+        margin-bottom: 18%;
+        font-size: 13px;
     }
     .answerText{
         font-size: 10px;
     }
-    .social a {
-        padding-top: 5%;
-        margin-bottom: 0;
-        color: white;
-        font-size: 1.5em;
+
+
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 550px) {
+    .apply-button {
+        padding: 1px 2px;
+        box-shadow: 1px 2px #603348;
     }
 
-    .social a {
-        text-decoration: none;
+    .centerButton:before {
+        content: ' ';
+        display: block;
+        height: 45%;
+
     }
-
-    .social > .row {
-        margin: 25% 0;
+    .date{
+        font-size: 2vh;
+        top: 40%;
     }
-
-
-
+}
+li{
+    display: inline-block;
+}
+.icon{
+    margin: 20px;
+}
+.footer{
+    text-align: center;
 }
