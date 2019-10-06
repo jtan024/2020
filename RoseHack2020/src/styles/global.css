@@ -1,3 +1,4 @@
+
 body, html{
     background: #DF999F;
     font-family: "Press Start 2P", cursive;
@@ -22,7 +23,7 @@ body, html{
 }
 #about{
     background: #DF999F;
-    margin-top: -50px;
+    margin-top: -30px;
 }
 
 section{
@@ -124,6 +125,7 @@ h1{
     transform: translate(-50%, -50%);
     left: 50%;
     font-size: 4vh;
+    font-family: "Press Start 2P", cursive;
 }
 .questionText{
     margin-bottom: 35%;
@@ -223,14 +225,12 @@ h1{
         left: 0%;
 
 
-
-
     }
     .half{
         width: 100%;
     }
     .questionText{
-        margin-bottom: 18%;
+        margin-bottom: 16%;
         font-size: 13px;
     }
     .answerText{
@@ -259,7 +259,7 @@ h1{
 
     }
     .date{
-        font-size: 2vh;
+        font-size: 1.5vh;
         top: 40%;
     }
 }
