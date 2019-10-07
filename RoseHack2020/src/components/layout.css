@@ -43,6 +43,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  font-family: "Press Start 2P", cursive;
 }
 a:active,
 a:hover {

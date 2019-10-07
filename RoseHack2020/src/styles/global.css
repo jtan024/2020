@@ -9,6 +9,7 @@ body, html{
 }
 .title{
     text-align: center;
+    overflow: hidden;
 
 }
 .overlay{
@@ -42,7 +43,7 @@ section{
 }
 
 .apply-button {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Press Start 2P", cursive;
     background-color: #FFEFEB;
     color: #402531;
     text-decoration: none;
@@ -55,6 +56,7 @@ section{
     width: 100%;
     min-width: 50px;
     max-width: 70px;
+
 
 }
 .apply-button:active {
@@ -237,12 +239,6 @@ h1{
         font-size: 10px;
     }
 
-
-
-
-
-
-
 }
 
 
@@ -259,7 +255,7 @@ h1{
 
     }
     .date{
-        font-size: 1.5vh;
+        font-size: 1.3vh;
         top: 40%;
     }
 }
