@@ -15,6 +15,7 @@ import Balsamiq from '../images/balsamiq.png'
 
 const IndexPage = () => (
   <Layout>
+      <SEO title="Rose Hack 2020" />
       <div className={'overlay'}>
           <img src={GIF} className={'animation'} />
       <div className={'centerButton'}>
@@ -28,7 +29,7 @@ const IndexPage = () => (
           Come for a lively weekend of innovation, face masks, discovering and creating new technology, networking, mentorship, and much more.</p>
       </section>
     <section className={'title'} id={'questions'}>
-      <h1 style={{textAlign: "center",}}>FAQ</h1>
+      <h1 style={{textAlign: "center",}}>FAQs</h1>
         <div className={'questionContainer'}>
           <div className={'half'}>
               <Question question={"What is a hackathon?"} answer={'A hackathon is a tech-focused event where individuals come together to build projects over the weekend. Projects can be an app, website, or anything that you want to build!'}/>
