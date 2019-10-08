@@ -59,11 +59,12 @@ export default class Question extends Component {
 
 
 
-          <button className={"answer"} onClick={this.handleClick}>
-                <div>
-                  <p className={'questionText'}>{this.props.question}</p>
-              <p className={'answerText'}>{this.props.answer}</p>
+          <button className={this.state.isToggleOn ? "tab" : "answer" } onClick={this.handleClick}>
+              <div><p className={this.state.isToggleOn ? 'preText' : 'postText'}>{this.props.question}</p></div>
+            {this.state.isToggleOn ? null: <div>
+                <p className={'answerText'}>{this.props.answer}</p>
             </div>
+            }
           </button>
 
 

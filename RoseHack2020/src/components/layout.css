@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Turret+Road&display=swap');
 html {
   font-family: 'Roboto', sans-serif;
   -ms-text-size-adjust: 100%;
@@ -43,7 +44,9 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  font-family: "Press Start 2P", cursive;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #603348;
+
 }
 a:active,
 a:hover {
@@ -201,7 +204,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: Roboto, sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
